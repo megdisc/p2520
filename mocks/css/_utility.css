@@ -1,0 +1,175 @@
+.is-pc {
+    display: block;
+}
+
+@media screen and (max-width: 767px) {
+    .is-pc {
+        display: none;
+    }
+}
+
+.is-pc--inline {
+    display: inline-block;
+}
+
+@media screen and (max-width: 767px) {
+    .is-pc--inline {
+        display: none;
+    }
+}
+
+.is-sp {
+    display: none;
+}
+
+@media screen and (max-width: 767px) {
+    .is-sp {
+        display: block;
+    }
+}
+
+.is-sp--inline {
+    display: none;
+}
+
+@media screen and (max-width: 767px) {
+    .is-sp--inline {
+        display: inline-block;
+    }
+}
+
+@-webkit-keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+
+        @media screen and (max-width: 1199px) {
+            transform: translateY(calc(10 / 1200 * 100vw));
+        }
+
+        @media screen and (max-width: 767px) {
+            transform: translateY(calc(10 / 375 * 100vw));
+        }
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+
+        @media screen and (max-width: 1199px) {
+            transform: translateY(calc(10 / 1200 * 100vw));
+        }
+
+        @media screen and (max-width: 767px) {
+            transform: translateY(calc(10 / 375 * 100vw));
+        }
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@-webkit-keyframes loop {
+    0% {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes loop {
+    0% {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+@-webkit-keyframes loop2 {
+    0% {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-200%);
+    }
+}
+
+@keyframes loop2 {
+    0% {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-200%);
+    }
+}
+
+@-webkit-keyframes popup {
+    0% {
+        opacity: 0;
+        transform: translateY(40px) scale(0.8);
+    }
+
+    100% {
+        transform: translateY(0) scale(1);
+    }
+
+    80%,
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes popup {
+    0% {
+        opacity: 0;
+        transform: translateY(40px) scale(0.8);
+    }
+
+    100% {
+        transform: translateY(0) scale(1);
+    }
+
+    80%,
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fuwafuwa {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+@keyframes fuwafuwa {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+}

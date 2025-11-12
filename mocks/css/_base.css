@@ -1,0 +1,186 @@
+html {
+    font-size: 62.5%;
+}
+
+html.is-open {
+    overflow: hidden;
+}
+
+body {
+    -webkit-text-size-adjust: 100%;
+    font-feature-settings: "palt" 1;
+    color: var(--color-black);
+    font-family: "Noto Sans JP";
+    font-size: 1rem;
+    font-style: normal;
+    font-style: normal;
+    font-weight: 400;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+body * {
+    letter-spacing: 0.05em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+}
+
+a {
+    color: var(--color-black);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover {
+    opacity: 0.8;
+}
+
+@media screen and (max-width: 767px) {
+    a:hover {
+        opacity: 1;
+    }
+}
+
+picture {
+    display: block;
+}
+
+input[type=submit],
+input[type=button],
+input[type=text],
+input[type=number],
+input[type=email],
+input[type=tel],
+input[type=reset],
+select,
+button,
+textarea {
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: var(--color-white);
+    border: none;
+    border-radius: 0;
+    box-sizing: border-box;
+    color: var(--color-black);
+}
+
+input[type=submit]::-webkit-search-decoration,
+input[type=button]::-webkit-search-decoration,
+input[type=text]::-webkit-search-decoration,
+input[type=number]::-webkit-search-decoration,
+input[type=email]::-webkit-search-decoration,
+input[type=tel]::-webkit-search-decoration,
+input[type=reset]::-webkit-search-decoration,
+select::-webkit-search-decoration,
+button::-webkit-search-decoration,
+textarea::-webkit-search-decoration {
+    display: none;
+}
+
+input[type=submit]:focus,
+input[type=button]:focus,
+input[type=text]:focus,
+input[type=number]:focus,
+input[type=email]:focus,
+input[type=tel]:focus,
+input[type=reset]:focus,
+select:focus,
+button:focus,
+textarea:focus {
+    outline-offset: -2px;
+}
+
+/* noto-sans-jp-regular - japanese_latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: "Noto Sans JP";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/noto-sans-jp-v52-japanese_latin-regular.woff2") format("woff2");
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* noto-sans-jp-500 - japanese_latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: "Noto Sans JP";
+    font-style: normal;
+    font-weight: 500;
+    src: url("../fonts/noto-sans-jp-v52-japanese_latin-500.woff2") format("woff2");
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* noto-sans-jp-700 - japanese_latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: "Noto Sans JP";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/noto-sans-jp-v52-japanese_latin-700.woff2") format("woff2");
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* barlow-regular - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: "Barlow";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/barlow-v12-latin-regular.woff2") format("woff2");
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* barlow-700 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: "Barlow";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/barlow-v12-latin-700.woff2") format("woff2");
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* zen-maru-gothic-regular - japanese_latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: "Zen Maru Gothic";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/zen-maru-gothic-v17-japanese_latin-regular.woff2") format("woff2");
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* zen-maru-gothic-700 - japanese_latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: "Zen Maru Gothic";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/zen-maru-gothic-v17-japanese_latin-700.woff2") format("woff2");
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* zen-maru-gothic-900 - japanese_latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: "Zen Maru Gothic";
+    font-style: normal;
+    font-weight: 900;
+    src: url("../fonts/zen-maru-gothic-v17-japanese_latin-900.woff2") format("woff2");
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}

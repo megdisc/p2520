@@ -1,0 +1,361 @@
+.p-header__button a {
+    align-items: center;
+    border: 1px solid var(--color-main);
+    border-radius: 30px;
+    color: var(--color-main);
+    display: flex;
+    font-size: 20px;
+    font-weight: bold;
+    height: 56px;
+    justify-content: center;
+    position: relative;
+    width: 330px;
+}
+
+@media screen and (max-width: 1439px) {
+    .p-header__button a {
+        border-radius: calc(30 / 1440 * 100vw);
+        font-size: calc(20 / 1440 * 100vw);
+        height: calc(56 / 1440 * 100vw);
+        width: calc(330 / 1440 * 100vw);
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .p-header__button a {
+        border-radius: calc(30 / 375 * 100vw);
+        font-size: calc(20 / 375 * 100vw);
+        height: calc(56 / 375 * 100vw);
+        width: calc(330 / 375 * 100vw);
+    }
+}
+
+.p-header__button a::after {
+    background-image: url("../../images/header_button_icon_arrow.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 13px;
+    margin: auto 0;
+    position: absolute;
+    right: 30px;
+    top: 0;
+    width: 9px;
+}
+
+@media screen and (max-width: 1439px) {
+    .p-header__button a::after {
+        height: calc(13 / 1440 * 100vw);
+        right: calc(30 / 1440 * 100vw);
+        width: calc(9 / 1440 * 100vw);
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .p-header__button a::after {
+        height: calc(13 / 375 * 100vw);
+        right: calc(30 / 375 * 100vw);
+        width: calc(9 / 375 * 100vw);
+    }
+}
+
+/* --- フォーム内のボタンここから --- */
+.c-form__content .button {
+    align-items: center;
+    display: flex;
+    height: 55px;
+    margin-top: 30px;
+    position: relative;
+}
+
+@media screen and (max-width: 1439px) {
+    .c-form__content .button {
+        height: calc(55 / 1440 * 100vw);
+        margin-top: calc(30 / 1440 * 100vw);
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .c-form__content .button {
+        height: calc(48 / 375 * 100vw);
+        margin-top: calc(30 / 375 * 100vw);
+    }
+}
+
+.c-form__content .button-back {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    font-size: 15px;
+    height: 55px;
+    left: 0;
+    position: absolute;
+    top: 0;
+}
+
+@media screen and (max-width: 1439px) {
+    .c-form__content .button-back {
+        font-size: calc(15 / 1440 * 100vw);
+        height: calc(55 / 1440 * 100vw);
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .c-form__content .button-back {
+        font-size: calc(10 / 375 * 100vw);
+        height: calc(48 / 375 * 100vw);
+    }
+}
+
+.c-form__content .button-back::before {
+    background-image: url("../../images/form_back_icon_arrow.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: "";
+    display: block;
+    height: 13px;
+    margin-right: 15px;
+    width: 7px;
+}
+
+@media screen and (max-width: 1439px) {
+    .c-form__content .button-back::before {
+        height: calc(13 / 1440 * 100vw);
+        margin-right: calc(15 / 1440 * 100vw);
+        width: calc(7 / 1440 * 100vw);
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .c-form__content .button-back::before {
+        height: calc(13 / 375 * 100vw);
+        margin-right: calc(15 / 375 * 100vw);
+        width: calc(7 / 375 * 100vw);
+    }
+}
+
+.c-form__content .button-next {
+    align-items: center;
+    background: linear-gradient(to right, #84bd12 0%, #009b7d 100%);
+    border-radius: 30px;
+    color: var(--color-white);
+    cursor: pointer;
+    display: flex;
+    font-size: 22px;
+    font-weight: bold;
+    height: 55px;
+    justify-content: center;
+    margin: 0 auto;
+    position: relative;
+    width: 330px;
+}
+
+@media screen and (max-width: 1439px) {
+    .c-form__content .button-next {
+        border-radius: calc(30 / 1440 * 100vw);
+        font-size: calc(22 / 1440 * 100vw);
+        height: calc(55 / 1440 * 100vw);
+        width: calc(330 / 1440 * 100vw);
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .c-form__content .button-next {
+        border-radius: calc(30 / 375 * 100vw);
+        font-size: calc(13 / 375 * 100vw);
+        height: calc(48 / 375 * 100vw);
+        width: calc(206 / 375 * 100vw);
+    }
+}
+
+.c-form__content .button-next::before {
+    background-image: url("../../images/form_next_icon_arrow.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 13px;
+    margin: auto 0;
+    position: absolute;
+    right: 30px;
+    top: 0;
+    width: 7px;
+}
+
+@media screen and (max-width: 1439px) {
+    .c-form__content .button-next::before {
+        height: calc(13 / 1440 * 100vw);
+        right: calc(30 / 1440 * 100vw);
+        width: calc(7 / 1440 * 100vw);
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .c-form__content .button-next::before {
+        height: calc(13 / 375 * 100vw);
+        right: calc(30 / 375 * 100vw);
+        width: calc(7 / 375 * 100vw);
+    }
+}
+
+.c-form__content .actions {
+    height: 55px;
+    margin: 30px auto 0;
+    position: relative;
+    width: 330px;
+}
+
+@media screen and (max-width: 1439px) {
+    .c-form__content .actions {
+        height: calc(55 / 1440 * 100vw);
+        margin: calc(30 / 1440 * 100vw) auto 0;
+        width: calc(330 / 1440 * 100vw);
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .c-form__content .actions {
+        height: calc(48 / 375 * 100vw);
+        margin: calc(30 / 375 * 100vw) auto 0;
+        width: calc(206 / 375 * 100vw);
+    }
+}
+
+.c-form__content .actions input[type="submit"] {
+    align-items: center;
+    background: linear-gradient(to right, #84bd12 0%, #009b7d 100%);
+    border-radius: 30px;
+    color: var(--color-white);
+    cursor: pointer;
+    display: flex;
+    font-size: 22px;
+    font-weight: bold;
+    height: 100%;
+    justify-content: center;
+    margin: 0 auto;
+    width: 100%;
+}
+
+@media screen and (max-width: 1439px) {
+    .c-form__content .actions input[type="submit"] {
+        border-radius: calc(30 / 1440 * 100vw);
+        font-size: calc(22 / 1440 * 100vw);
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .c-form__content .actions input[type="submit"] {
+        border-radius: calc(30 / 375 * 100vw);
+        font-size: calc(13 / 375 * 100vw);
+    }
+}
+
+.c-form__content .actions::before {
+    background-image: url("../../images/form_next_icon_arrow.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 13px;
+    margin: auto 0;
+    position: absolute;
+    right: 30px;
+    top: 0;
+    width: 7px;
+    z-index: 1;
+}
+
+@media screen and (max-width: 1439px) {
+    .c-form__content .actions::before {
+        height: calc(13 / 1440 * 100vw);
+        right: calc(30 / 1440 * 100vw);
+        width: calc(7 / 1440 * 100vw);
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .c-form__content .actions::before {
+        height: calc(13 / 375 * 100vw);
+        right: calc(30 / 375 * 100vw);
+        width: calc(7 / 375 * 100vw);
+    }
+}
+
+/* --- フォーム内のボタンここまで --- */
+
+.p-thanks__textBox__button a {
+    align-items: center;
+    background-color: var(--color-border);
+    border-radius: 50px;
+    color: var(--color-white);
+    display: flex;
+    font-size: 20px;
+    font-weight: bold;
+    height: 70px;
+    justify-content: center;
+    margin: 0 auto;
+    position: relative;
+    width: 370px;
+}
+
+@media screen and (max-width: 1199px) {
+    .p-thanks__textBox__button a {
+        border-radius: calc(50 / 1200 * 100vw);
+        font-size: calc(20 / 1200 * 100vw);
+        height: calc(70 / 1200 * 100vw);
+        width: calc(370 / 1200 * 100vw);
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .p-thanks__textBox__button a {
+        border-radius: calc(50 / 375 * 100vw);
+        font-size: calc(15 / 375 * 100vw);
+        height: calc(50 / 375 * 100vw);
+        width: calc(270 / 375 * 100vw);
+    }
+}
+
+.p-thanks__textBox__button a::after {
+    background-image: url("../../images/icon_arrow_button.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 14px;
+    margin: auto 0;
+    position: absolute;
+    right: 40px;
+    top: 0;
+    width: 9px;
+}
+
+@media screen and (max-width: 1199px) {
+    .p-thanks__textBox__button a::after {
+        height: calc(14 / 1200 * 100vw);
+        right: calc(40 / 1200 * 100vw);
+        width: calc(9 / 1200 * 100vw);
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .p-thanks__textBox__button a::after {
+        height: calc(14 / 375 * 100vw);
+        right: calc(30 / 375 * 100vw);
+        width: calc(9 / 375 * 100vw);
+    }
+}
