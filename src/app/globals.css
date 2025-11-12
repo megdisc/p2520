@@ -175,14 +175,18 @@ img {
 * {
     box-sizing: border-box !important;
     font-size: 1.4rem;
-}:root {
+}
+
+:root {
     --color-white: #ffffff;
     --color-black: #000000;
     --color-main: #f7931e;
     --color-main2: #1ea820;
     --color-bg: #333333;
     --color-border: #e86a15;
-}html {
+}
+
+html {
     font-size: 62.5%;
 }
 
@@ -367,7 +371,9 @@ textarea:focus {
     font-weight: 900;
     src: url("/fonts/zen-maru-gothic-v17-japanese_latin-900.woff2") format("woff2");
     /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}.l-container {
+}
+
+.l-container {
     margin: 0 auto;
     padding-left: 17px;
     padding-right: 17px;
@@ -489,7 +495,7 @@ textarea:focus {
 }
 
 .p-mainVisual {
-    background-image: url("../images/mainvisul_bg.webp");
+    background-image: url("/images/mainvisul_bg.webp");
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
@@ -545,7 +551,7 @@ textarea:focus {
 
 @media screen and (max-width: 767px) {
     .p-mainVisual__content {
-        background-image: url("../images/mainvisul_bg_sp.webp");
+        background-image: url("/images/mainvisul_bg_sp.webp");
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -572,7 +578,7 @@ textarea:focus {
 }
 
 .p-mainVisual__content__inner::before {
-    background-image: url("../images/mainvisual_woman.webp");
+    background-image: url("/images/mainvisual_woman.webp");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -735,7 +741,7 @@ textarea:focus {
 }
 
 .p-mainVisual__content__badge {
-    background-image: url("../images/mainvisul_badge.webp");
+    background-image: url("/images/mainvisul_badge.webp");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -858,7 +864,9 @@ textarea:focus {
 
 .p-footer__link a {
     color: var(--color-white);
-}.is-pc {
+}
+
+.is-pc {
     display: block;
 }
 
@@ -1032,7 +1040,9 @@ textarea:focus {
     50% {
         transform: translateY(-20px);
     }
-}.p-header__button a {
+}
+
+.p-header__button a {
     align-items: center;
     border: 1px solid var(--color-main);
     border-radius: 30px;
@@ -1065,7 +1075,7 @@ textarea:focus {
 }
 
 .p-header__button a::after {
-    background-image: url("../../images/header_button_icon_arrow.svg");
+    background-image: url("/images/header_button_icon_arrow.svg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -1149,7 +1159,7 @@ textarea:focus {
 }
 
 .c-form__content .button-back::before {
-    background-image: url("../../images/form_back_icon_arrow.svg");
+    background-image: url("/images/form_back_icon_arrow.svg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -1211,7 +1221,7 @@ textarea:focus {
 }
 
 .c-form__content .button-next::before {
-    background-image: url("../../images/form_next_icon_arrow.svg");
+    background-image: url("/images/form_next_icon_arrow.svg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -1295,7 +1305,7 @@ textarea:focus {
 }
 
 .c-form__content .actions::before {
-    background-image: url("../../images/form_next_icon_arrow.svg");
+    background-image: url("/images/form_next_icon_arrow.svg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -1363,7 +1373,7 @@ textarea:focus {
 }
 
 .p-thanks__textBox__button a::after {
-    background-image: url("../../images/icon_arrow_button.svg");
+    background-image: url("/images/icon_arrow_button.svg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -1392,7 +1402,9 @@ textarea:focus {
         right: calc(30 / 375 * 100vw);
         width: calc(9 / 375 * 100vw);
     }
-}.c-form {
+}
+
+.c-form {
     border-radius: 10px;
     box-shadow: 1.82px 1.82px 2.73px rgba(0, 0, 0, 0.2);
 }
@@ -1484,7 +1496,7 @@ textarea:focus {
 }
 
 .c-form__titleBox__stepList>ul>li {
-    background-image: url("../../images/form_step_dot.svg");
+    background-image: url("/images/form_step_dot.svg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -1665,7 +1677,7 @@ textarea:focus {
 }
 
 .c-form__content .field select {
-    background-image: url("../../images/form_select_icon_arrow.svg");
+    background-image: url("/images/form_select_icon_arrow.svg");
     background-position: right 42px center;
     background-repeat: no-repeat;
     background-size: 14px 9px;
@@ -1816,7 +1828,9 @@ textarea:focus {
 .c-form__content .hs-privacy_policy .hs-form-booleancheckbox a {
     color: var(--color-main);
     text-decoration: underline;
-}/* thanksページ専用のスタイル */
+}
+
+/* thanksページ専用のスタイル */
 .p-thanksHeader {
     background: linear-gradient(to right, #84bd12 0%, #009b7d 100%);
     height: 92px;
