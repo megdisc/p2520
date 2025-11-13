@@ -2107,3 +2107,283 @@ textarea:focus {
     font-weight: bold;
 }
 
+/* --- モーダル (React) --- */
+.c-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9990;
+  padding: 20px; /* SPで画面端に余白 */
+  overflow-y: auto; /* モーダル内容が長い場合に備えてスクロール */
+}
+
+/* --- モーダル (React) --- */
+/* .c-modal-overlay は前回定義済みのはずですが、念のため記載します */
+.c-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9990;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+/* 以下、p2520/mocks/css/_component/_modal.css より移植 
+  (React コンポーネント用に一部修正)
+*/
+
+.p-pp {
+  /* lity 依存のスタイルを削除し、
+    Reactコンポーネント用に修正 
+  */
+  -ms-overflow-style: none;
+  background-color: var(--color-white); /* ※_variable.css の変数が定義されている前提 */
+  height: 580px;
+  overflow: scroll;
+  padding: 55px 65px 45px;
+  position: relative; /* 閉じるボタンの基準 (fixed から変更) */
+  scrollbar-width: none;
+  width: 780px;
+  
+  /* SP/Tablet用のサイズ調整 (モックより流用) */
+  max-width: 100%; /* 画面幅を超えるのを防ぐ */
+}
+
+@media screen and (max-width: 1199px) {
+  .p-pp {
+    height: calc(580 / 1200 * 100vw);
+    padding: calc(55 / 1200 * 100vw) calc(65 / 1200 * 100vw) calc(45 / 1200 * 100vw);
+    width: calc(780 / 1200 * 100vw);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .p-pp {
+    height: 94vh; /* lity でないためvh指定に変更を推奨 */
+    padding: calc(40 / 375 * 100vw) calc(25 / 375 * 100vw) calc(80 / 375 * 100vw);
+    width: calc(335 / 375 * 100vw);
+  }
+}
+
+.p-pp::-webkit-scrollbar {
+  display: none;
+}
+
+.p-pp__title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+@media screen and (max-width: 1199px) {
+  .p-pp__title {
+    font-size: calc(20 / 1200 * 100vw);
+    margin-bottom: calc(40 / 1200 * 100vw);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .p-pp__title {
+    font-size: calc(18 / 375 * 100vw);
+    margin-bottom: calc(30 / 375 * 100vw);
+  }
+}
+
+.p-pp__entry h2 {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 25px;
+  margin-bottom: 25px;
+}
+
+@media screen and (max-width: 1199px) {
+  .p-pp__entry h2 {
+    font-size: calc(16 / 1200 * 100vw);
+    line-height: calc(25 / 1200 * 100vw);
+    margin-bottom: calc(25 / 1200 * 100vw);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .p-pp__entry h2 {
+    font-size: calc(16 / 375 * 100vw);
+    line-height: calc(25 / 375 * 100vw);
+    margin-bottom: calc(25 / 375 * 100vw);
+  }
+}
+
+.p-pp__entry h2.block {
+  margin-top: 75px;
+}
+
+@media screen and (max-width: 1199px) {
+  .p-pp__entry h2.block {
+    margin-top: calc(75 / 1200 * 100vw);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .p-pp__entry h2.block {
+    margin-top: calc(75 / 375 * 100vw);
+  }
+}
+
+.p-pp__entry h3 {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 25px;
+  margin-bottom: 25px;
+}
+
+@media screen and (max-width: 1199px) {
+  .p-pp__entry h3 {
+    font-size: calc(16 / 1200 * 100vw);
+    line-height: calc(25 / 1200 * 100vw);
+    margin-bottom: calc(25 / 1200 * 100vw);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .p-pp__entry h3 {
+    font-size: calc(16 / 375 * 100vw);
+    line-height: calc(25 / 375 * 100vw);
+    margin-bottom: calc(25 / 375 * 100vw);
+  }
+}
+
+.p-pp__entry p {
+  font-size: 14px;
+  line-height: 25px;
+  text-align: justify;
+}
+
+@media screen and (max-width: 1199px) {
+  .p-pp__entry p {
+    font-size: calc(14 / 1200 * 100vw);
+    line-height: calc(25 / 1200 * 100vw);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .p-pp__entry p {
+    font-size: calc(14 / 375 * 100vw);
+    line-height: calc(25 / 375 * 100vw);
+  }
+}
+
+.p-pp__entry p+* {
+  margin-top: 25px;
+}
+
+@media screen and (max-width: 1199px) {
+  .p-pp__entry p+* {
+    margin-top: calc(25 / 1200 * 100vw);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .p-pp__entry p+* {
+    margin-top: calc(25 / 375 * 100vw);
+  }
+}
+
+.p-pp__entry>ul>li {
+  font-size: 14px;
+  line-height: 25px;
+  text-align: justify;
+}
+
+@media screen and (max-width: 1199px) {
+  .p-pp__entry>ul>li {
+    font-size: calc(14 / 1200 * 100vw);
+    line-height: calc(25 / 1200 * 100vw);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .p-pp__entry>ul>li {
+    font-size: calc(14 / 375 * 100vw);
+    line-height: calc(25 / 375 * 100vw);
+  }
+}
+
+.p-pp__entry>ul>li.right {
+  text-align: right;
+}
+
+.p-pp__entry>ul+* {
+  margin-top: 25px;
+}
+
+@media screen and (max-width: 1199px) {
+  .p-pp__entry>ul+* {
+    margin-top: calc(25 / 1200 * 100vw);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .p-pp__entry>ul+* {
+    margin-top: calc(25 / 375 * 100vw);
+  }
+}
+
+.p-pp__entry a {
+  color: var(--color-font); /* ※_variable.css の変数が定義されている前提 */
+}
+
+/* 閉じるボタン */
+.p-pp__button {
+  background-color: var(--color-main); /* ※_variable.css の変数が定義されている前提 */
+  
+  /* モックのパス ../../images/pp_icon_close.svg を 
+    public フォルダ基準の /images/pp_icon_close.svg に変更
+  */
+  background-image: url("/images/pp_icon_close.svg"); 
+  
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  content: "";
+  cursor: pointer;
+  display: block;
+  height: 32px;
+  
+  /* lity 依存の fixed (画面固定) から 
+    .p-pp を基準にした absolute (要素内固定) に変更 
+  */
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  
+  width: 32px;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 1199px) {
+  .p-pp__button {
+    height: calc(32 / 1200 * 100vw);
+    right: calc(20 / 1200 * 100vw);
+    top: calc(20 / 1200 * 100vw);
+    width: calc(32 / 1200 * 100vw);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* SP時の閉じるボタン (モックでは画面下部固定だった) の調整 */
+  .p-pp__button {
+    bottom: auto; /* SP時は右上に統一 (モックの fixed 動作を解除) */
+    height: calc(32 / 375 * 100vw);
+    left: auto;
+    margin: 0;
+    right: calc(20 / 375 * 100vw); /* PC/Tablet と同様に右上に配置 */
+    top: calc(20 / 375 * 100vw);
+    width: calc(32 / 375 * 100vw);
+  }
+}
